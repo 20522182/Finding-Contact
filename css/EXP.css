@@ -1,0 +1,77 @@
+/*# sourceMappingURL=main.css.map */
+.container{
+    background-color: rgb(204, 191, 167);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p,h1,h2,h3{margin: 0px;}
+.content{
+    border-radius: 10px; /*bo tròn */
+    overflow: hidden;
+}
+.header{
+    background-color: azure;
+    padding: 20px; 
+}
+
+.header img{
+    max-width: 300px;
+    padding-bottom: 10px;
+}
+.header h1{
+    font-size:  20px;
+}
+/* opacity Bo tròn */
+.header p{
+    font-size: 12px;
+    opacity: 0.8; /* độ mờ của chữ */
+}
+.header input{
+    background-color: black;
+    border: 0px;
+    padding: 8px 15px;
+    border-radius: 8px; /*bo tròn */
+    margin-top: 15px; /*canh trên */
+    color: white;
+}
+.list{
+    background-color: aliceblue;
+    max-height: 400px;
+    overflow: scroll;
+    padding: 20px 0px;
+}
+.list > div.hidden{
+    display: none;
+}
+/* style phần tử đầu tiên */
+.list>div{
+    display: grid;
+    grid-template-columns: 40px auto; /* chỉnh cột list */
+    gap: 10px;
+    padding: 10px 20px;
+    
+}
+.list img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.list h2{
+    font-size: 16px;
+}
+.list p{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* tạo thuộc tính xen kẽ */
+.list>div:nth-child(odd){
+    background-color: orange;
+}
